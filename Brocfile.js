@@ -17,4 +17,12 @@ var app = new EmberApp();
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
 
+app.import('bower_components/ember-cpm/dist/named-amd/ember-cpm.js', {
+  exports: {
+    'ember-cpm': [
+      // something here?
+    ]
+  }
+});
+
 module.exports = app.toTree();
