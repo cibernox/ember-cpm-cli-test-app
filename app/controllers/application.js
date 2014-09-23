@@ -1,7 +1,7 @@
 import Ember from 'ember';
-import EmberCPM from 'ember-cli-ember-cpm/ember-cpm';
+import ifNull from 'ember-cpm/if-null';
 
 export default Ember.Controller.extend({
   something: 'abc',
-  computedValue: EmberCPM.Macros.ifNull('name', 'Anonymous')
+  computedValue: ifNull('name', 'Anonymous')
 });
